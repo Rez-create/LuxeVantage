@@ -656,6 +656,12 @@ header a:hover {
         }
 
         /* ..........contact....... */
+        .contact-info{
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+          gap: 10px;
+        }
+      
         .c-form {
           display: grid;
           grid-template-columns: repeat(1, 1fr);
