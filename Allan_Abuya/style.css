@@ -1,0 +1,96 @@
+*{
+    background-color:grey;
+    color: rgb(0, 0, 0);
+}
+header{
+    background-color: black ;
+    color:white ;
+    top: 0;
+}
+
+header nav{
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    background-color: black;
+}
+
+header ul{
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+
+}
+
+header li{
+    display: flex;
+}
+
+.about{
+    display: flex;
+    gap: 15px;
+    padding: 15px;
+}
+
+.about-info{
+    width: 50%;
+}
+
+.about-image{
+    width: 50%;
+    
+}
+
+.allan{
+    border-radius: 15px;
+    width:100%;
+    height:700px ;
+}
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.gallery img {
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+}
+.abuya{
+    width:50% ;
+}
+
+.abt-gallery{
+    width: 50%;
+}
+.junior{
+    width: 50%;
+}
+.pilot{
+    width: 50%;
+}
+.kijana{
+    width: 50%;
+}
+
+footer{
+    background-color: rgb(173, 171, 171);
+    height: 80px;
+    
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.footer a{
+text-decoration: none;
+}
+.instagram{
+    float: left;
+    width: 50%;
+    padding: 25px;
+
+}

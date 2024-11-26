@@ -1,0 +1,270 @@
+*{
+    background-color: rgb(1, 20, 37);
+    color: white;
+/* HEADER------------------------------- */
+}
+
+header nav{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    background-color: black;
+    
+
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    gap: 3rem;
+    
+
+}
+header nav a{
+    text-decoration: none;
+}
+
+
+
+header img{
+    width: 90px;
+    height: 40px;
+}
+
+
+/* ------------------------------------ */
+
+/* ABOUT------------------------------------ */
+
+#about{
+    padding: 40px;
+}
+.welcome{
+    text-align: center;
+}
+
+.home{
+    display: flex;
+}
+
+.home-img{
+    width: 50%;
+}
+
+.home-info{
+    width: 50%;
+    text-align: center;
+    font-size: large;
+}
+.home-info p span{
+    color: springgreen;
+}
+
+/* ---------------------------------------------- */
+
+/* RESUME----------------------------------- */
+#resume{
+    padding: 40px;
+}
+
+.resume h1{
+    text-align: center;
+    font-size: 30px;
+}
+
+.resume h4{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(4, 124, 28);
+}
+
+.resume  button{
+    border-radius: 10px;
+    background-color: rgb(8, 162, 147);
+   
+    
+}
+
+.resume button a{
+    text-decoration: none;
+    background-color:rgb(8, 162, 147);
+    color: black;
+    font-weight: 900;
+}
+
+
+/* ------------------------------------ */
+
+/* gallery------------------------- */
+#gallery{
+    padding: 40px;
+}
+
+
+.gallery li{
+    list-style: none;
+}
+
+.gallery h1{
+    text-align: center;
+    font-size: 30px;
+}
+
+.gallery-img{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    border-radius: 50px;
+    gap: 1rem;
+   
+}
+.gallery figure{
+    width: 100%;
+    height: 900px;
+    border-radius: 50px;
+    overflow: hidden;
+    
+    
+}
+
+/* --------------------------------------------------------- */
+
+/* contact------------------------- */
+#contact{
+    padding: 40px;
+    text-align: center;
+}
+
+.contact A{
+    padding: 0px
+}
+
+
+.form-input{
+    position: relative;
+    left: 650px;
+    display: flex;
+    gap: 25px;
+}
+
+.cont{
+    float: left;
+    width: calc(33.333%-90px);
+    padding: 8%;
+    box-sizing: border-box;
+}
+
+.submit{
+    border-radius: 20px;
+    background-color: rgb(8, 162, 147);
+}
+
+
+.cont li{
+    list-style: none;
+}
+.cont a{
+    text-decoration: none;
+}
+
+footer{
+    bottom: 0px;
+}
+
+
+/* ------------------------------------------------------- */
+
+/* RESPONSIVENESS------------------------------------------ */
+
+@media only screen and (max-width:768px){
+    header nav{
+      
+        display: flex;
+        width: 100%;
+        background-color: black;
+    
+    }
+    header img{
+        display: none;
+    }
+
+    .home{
+        flex-direction: column;
+    }
+    .home-img{
+        width: 100%;
+        height: 500px;
+    }
+    
+    
+    .home-info{
+        width: 100%;    
+    }
+
+    .gallery-img{
+        
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        border-radius: 50px;
+        padding: 0px;
+        
+       
+    }
+
+    .gallery figure{
+        width: 100%;
+        height: 500px;
+        border-radius: 50px;
+        overflow: hidden; 
+        
+    }
+
+    .form-input{
+        position: relative;
+        left: 50px;
+        display: flex;
+        gap: 25px;
+    }
+
+    .contact B{
+        display: flex;
+        justify-content: space-between;
+    }
+    .cont{
+        /* float: left; */
+        width: calc(33.333%-90px);
+        padding: 6%;
+        box-sizing: border-box;
+   }
+   
+
+   
+
+  
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

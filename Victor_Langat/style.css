@@ -1,0 +1,335 @@
+body{
+    background-color: rgb(59, 58, 58);
+    color: white;
+    font-size: large;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(59, 58, 58);
+    padding: 5px;
+    padding-top: 0px;
+    text-align: center;
+    z-index: 1000; /* Ensures the header stays on top of other elements */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);    
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between; /* Space between your name and links */
+    align-items: center;
+}
+.navbar-links{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+.navbar-links li{
+    margin: 0px 20px;
+}
+.navbar-links a{
+    text-decoration: none;
+    transition: color o.3s ease;
+    color: white;
+}
+
+.navbar-links a:hover{
+    color: aqua;
+
+}
+
+.home-page h2, h3, p{
+    padding: auto;
+    margin: 5px;
+    flex: 1;
+}
+
+.All-image-text{
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+   
+}
+
+p{
+    font-size: 15px;
+}
+
+img{
+    height: 500px;
+    width: 400px;
+}
+
+.image-display{
+    margin-left: 10px;
+    filter:drop-shadow(0px 0px 10px aqua);
+}
+.image-victor{
+    object-fit: cover;
+    clip-path: circle(35% at 50% 50%);
+}
+
+.social-media-icons a{
+    font-size: 20px;
+    margin: 0px;
+    padding: 5px;
+    text-decoration: none;
+    transition: 0.5s;
+    border-radius: 5px;
+    box-sizing: border-box;
+    box-shadow: 10px 7px 20px aqua;
+    background: #fff;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0);
+    color: var(--color);
+}
+.social-media-icons i:hover{
+    color:aqua;
+}
+
+/*second section*/
+
+.about-page h2, h3, p{
+    padding: auto;
+    margin: 5px;
+    flex: 1;    
+}
+.All-image-text-2{
+    display: flex;
+    align-items: center; /* Aligns text and image vertically in the center */
+    justify-content: space-between;
+}
+
+.image-langat{
+    object-fit: cover;
+    clip-path: circle(35% at 50% 50%);
+
+}
+/*styling button*/
+button{
+    align-items: center;
+    appearance: none;
+    background-color: rgb(59, 58, 58);
+    border-radius: 24px;
+    border-style: aqua;
+    box-shadow:  0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    margin-top: 10px;
+    padding: 5px;
+    color: aqua;
+}
+
+button a{
+    color:aqua;
+    text-decoration: none;
+}
+
+.button:hover {
+    filter:drop-shadow(0px 0px 10px aqua); 
+}
+/*project section*/
+.projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.img-container{
+    height: 320px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+}
+.img-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.overlay-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    background: linear-gradient(transparent); 
+    border-radius: 15px;
+    opacity: 0; 
+    transition: opacity 0.3s ease; /* Fade-in effect */    
+    backdrop-filter: blur(40px); /* Blurs the background behind this container */
+}
+
+  /* Show overlay text on hover */
+.img-container:hover .overlay-text {
+    opacity: 1; /* Text becomes visible */
+}
+.overlay-text-2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    background: linear-gradient(transparent); 
+    border-radius: 15px;
+    opacity: 0; 
+    transition: opacity 0.3s ease;     
+    backdrop-filter: blur(40px); /* Blurs the background behind this container */
+}
+
+.img-container:hover .overlay-text-2 {
+    opacity: 1; /* Text becomes visible */
+}
+
+.overlay-text-3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    background: linear-gradient(transparent); 
+    border-radius: 15px;
+    opacity: 0; 
+    transition: opacity 0.3s ease; /* Fade-in effect */    
+    backdrop-filter: blur(40px); /* Blurs the background behind this container */
+}
+
+.img-container:hover .overlay-text-3 {
+    opacity: 1; /* Text becomes visible */
+}
+/*contact me stn*/
+h4 {
+    font-family: 'Roboto', sans-serif, 'arial';
+    font-weight: 400;
+    font-size: 20px;
+    color: #9b9b9b;
+    line-height: 1.5;
+}
+
+/* ///// inputs /////*/
+
+input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label {
+    font-size: 0.75em;
+    color: #999;
+    top: -5px;
+    -webkit-transition: all 0.225s ease;
+    transition: all 0.225s ease;
+}
+
+.styled-input {
+    float: left;
+    width: 293px;
+    margin: 1rem 0;
+    position: relative;
+    border-radius: 4px;
+}
+
+@media only screen and (max-width: 768px){
+    .styled-input {
+        width:100%;
+    }
+}
+
+.styled-input label {
+    color: #999;
+    padding: 1.3rem 30px 1rem 30px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+    pointer-events: none;
+}
+
+.styled-input.wide { 
+    width: 650px;
+    max-width: 100%;
+}
+
+input,
+textarea {
+    padding: 30px;
+    border: 0;
+    width: 100%;
+    font-size: 1rem;
+    background-color: #2d2d2d;
+    color: white;
+    border-radius: 4px;
+}
+
+input:focus,
+textarea:focus { outline: 0; }
+
+input:focus ~ span,
+textarea:focus ~ span {
+    width: 100%;
+    -webkit-transition: all 0.075s ease;
+    transition: all 0.075s ease;
+}
+
+textarea {
+    width: 100%;
+    min-height: 15em;
+}
+
+.input-container {
+    width: 650px;
+    max-width: 100%;
+    margin: 20px auto 25px auto;
+}
+
+input[type="submit"] {
+    background-color: grey; 
+    color: white; 
+    padding: 12px 5px; 
+    border: none; 
+    border-radius: 25px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: aqua; 
+    transform: scale(1.05); 
+  }
+  
+  input[type="submit"]:active {
+    background-color: aqua; 
+    transform: scale(0.98); 
+  }
+.input-contain{
+    width: 150px;
+    max-width: 100%;
+} 
+

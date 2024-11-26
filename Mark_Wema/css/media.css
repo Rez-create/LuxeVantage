@@ -1,0 +1,100 @@
+/* General Styling */
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: gold;
+}
+
+/* Media Section */
+section.media {
+    padding: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+section.media h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+/* Media Gallery */
+.media-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.media-item img {
+    width: 50%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Flexbox layout for media-item */
+.media-item {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.media-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Flex container for image and text */
+.media-content {
+    display: flex;
+    align-items: center;
+}
+
+.media-content img {
+    width: 260px; /* Adjust as needed */
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px; /* Adds space between image and text */
+}
+
+.media-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.media-item p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .media-gallery {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,21 @@
+PROJECT NAME: LUXEVANTAGE
+
+LuxeVantage is a luxury brand that deals with selling of luxurious automobiles, fashion and 
+apparel(cloths), Jewellery and Watches.
+
+HOW TO NAVIGATE THROUGH THE WEBSITE
+- The main index.html file is below when you open the folder containing the project(LuxeVantage).
+- To access the brands within LuxeVantage, navigate to services section and either click Know More 
+  or tap on the image.
+- The contributors to the project are in Directors section.
+- To access each directors profile, click About me button below the respective picture.
+
+
+Directors are:-
+
+1. Mark Wema Mwatela - 1062900
+2. Allan Abuya Ong'onge - 1063183
+3. Okoth Barrack - 1063061
+4. Elvis Korir Kimutai -1063463
+5. George Kimani - 1063591
+6. Langat Victor -1063370

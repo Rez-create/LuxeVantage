@@ -1,0 +1,172 @@
+/* General Styling */
+body {
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+    color: rgb(51, 51, 51);
+    box-sizing: border-box;
+}
+
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+    color: rgb(51, 51, 51);
+}
+
+a {
+    text-decoration: none;
+    color: rgb(85, 85, 85);
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: gold;
+}
+
+/* About Section */
+section.about {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.bio-text {
+    width: 50%;
+}
+
+.bio-text h2 {
+    font-size: 28px;
+    color: black;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+.bio-text p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: rgb(85, 85, 85);
+    margin-left: 10px;
+}
+
+.bio-image {
+    width: 20%;
+}
+
+.bio-image img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Leadership Section */
+section.leadership {
+    background-color: rgb(245, 245, 245);
+    padding: 50px;
+    text-align: center;
+}
+
+section.leadership h2 {
+    font-size: 28px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.leadership-content p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: rgb(85, 85, 85);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Philosophy Section */
+section.philosophy {
+    background-color: white;
+    padding: 50px;
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+section.philosophy h2 {
+    font-size: 28px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+section.philosophy blockquote {
+    font-size: 24px;
+    font-style: italic;
+    color: rgb(51, 51, 51);
+    margin: 20px auto;
+    max-width: 800px;
+    border-left: 5px solid gold;
+    padding-left: 20px;
+}
+
+.philosophy-text p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: rgb(85, 85, 85);
+}
+
+/* Philanthropy Section */
+section.philanthropy {
+    background-color: rgb(245, 245, 245);
+    padding: 50px;
+    text-align: center;
+}
+
+section.philanthropy h2 {
+    font-size: 28px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.philanthropy-content {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.philanthropy-content .interest {
+    width: 45%;
+    text-align: left;
+}
+
+.philanthropy-content img {
+    width: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+.philanthropy-content p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: rgb(85, 85, 85);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    section.about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .bio-text, .bio-image {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .philanthropy-content {
+        flex-direction: column;
+    }
+
+    .philanthropy-content .interest {
+        width: 100%;
+    }
+}

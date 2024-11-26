@@ -1,0 +1,75 @@
+/* General Styles */
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+    color: rgb(51, 51, 51);
+}
+
+a {
+    text-decoration: none;
+    color: rgb(85, 85, 85);
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: gold;
+}
+
+/* Achievements Section */
+section.achievements {
+    padding-bottom: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+section.achievements h2 {
+    font-size: 32px;
+    color: rgb(51, 51, 51);
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+/* Achievements Grid */
+.achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.achievement {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.achievement:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.achievement img {
+    width: 50px;
+    margin-bottom: 20px;
+}
+
+.achievement h3 {
+    font-size: 20px;
+    color: black;
+    margin-bottom: 15px;
+    font-family: 'Playfair Display', serif;
+}
+
+.achievement p {
+    font-size: 16px;
+    color: rgb(85, 85, 85);
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .achievements-grid {
+        grid-template-columns: 1fr;
+    }
+}
